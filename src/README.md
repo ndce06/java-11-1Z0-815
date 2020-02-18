@@ -37,3 +37,34 @@ Course - https://cognizant.udemy.com/course/oracle-java-11-programmer-exam-1z081
 - No package statement makes the class, or type you define
 
 * What to look for - multiple package statement - package statement not the first line of code - import statement not in correct order
+
+## Primitive Data Types
+
+byte - 8 bits
+char - 16 bits
+short - 16 bits
+int - 32 bits
+long - 64 bits
+float - 32 bits
+double - 64 bits
+boolean - 1 bit
+
+- primitive data types cannot be null - int i8 = null;
+  expect it's instance or static variable of class.
+
+## Invalid - literals
+
+byte b8 = 0b*00000001; // cannot have underscore directly after 0b
+char c8 = 0x_007F; // cannot have underscore directly after 0x
+int i8 = 10000*; // underscore cannot be at end of literal
+long d8 = 10000_L; // underscore cannot be prior to suffix (L/l, f/F, d/D)
+float f8 = \_100.000; // underscore cannot be at start of literal
+double l8 = 1.00000_e10; // underscore cannot prefix exponential in literal
+
+## Declare and initialize Variables - Things to Remember
+
+- Literals with decimal default to double, not float.
+- Doubles and floats do not overflow, since they are approximated.
+- Local variable privmitives are not initilalized.
+- Class static and instance members are initialized.
+- null is not a valid value for a primitive data type.
